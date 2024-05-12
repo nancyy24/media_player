@@ -61,4 +61,8 @@ Additional Details:
 Talking about bug in the project:
 1) Spacebar functionality not working properly
 2) Mute using "m" keyword is also not working properly
-   
+
+Project Output: 
+
+![Screenshot (2959)](https://github.com/nancyy24/media_player/assets/93393288/a906d5e7-89fb-41e5-89be-2153dd29ade3)
+![Screenshot (2958)](https://github.com/nancyy24/media_player/assets/93393288/7d60a5c8-ddcd-4070-a231-1544a50db6a3)
