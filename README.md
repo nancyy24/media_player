@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The deployed version is also present: https://media-player-main.vercel.app/
 
-## Getting Started
+Steps and Commands to run this project:
+1) Install all node modules :
+   command -> npm i
+2) Run the project
+   command -> (a) npm run build
 
-First, run the development server:
+   (b) npm run start or use npm run dev
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+In this project, when we maximize the screen press two times Esc key, in order to get the normal screen.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The key features of this project: 
+ The player is capable of distinguishing between audio and video URLs and adapt its functionality accordingly. The required controls are as follows:
+1) Play/Pause
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2) Previous
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3) Next
 
-## Learn More
+4) Volume Control
 
-To learn more about Next.js, take a look at the following resources:
+5) Minimize
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6) Full Screen
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+7) 10 seconds Forward
 
-## Deploy on Vercel
+8) 10 seconds Backward
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+9) Play Speed Control (0.5x to 4x) on 0.25 interval
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+10) Progress Bar indicating media progress
+
+11) Display media duration and current progress on the progress bar
+   
+12) Enable media playback from any clicked position on the progress bar 
+
+13) Implement keyboard accessibility as follows:
+Up/Down Arrow: Volume Control,
+
+Right/Left Arrow: 10-second Forward/Backward, 
+
+F: Full Screen, 
+
+Esc: Exit Full Screen, 
+
+W: Minimize, 
+
+N: Play Next Media, 
+
+P: Play Previous Media, 
+
+15) Automatically hide controls unless hovered over or the player is paused
+    
+Additional Details:
+1) Minimized player should transition to a fixed floating box at the bottom right corner, maintaining a 16:9 aspect ratio with 300px width
+2) Minimized box should include a close and expand button
+3) Tech Stack : Next.js, CSS, Zustand
+
+Talking about bug in the project:
+1) Spacebar functionality not working properly
+2) Mute using "m" keyword is also not working properly
+   
